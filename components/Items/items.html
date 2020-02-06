@@ -1,0 +1,20 @@
+<div class="items-page">
+  {{#each items}}
+    <div class="item-line">
+      <div class="item-line__name">
+        Название: {{ this.name }}
+      </div>
+      <div class="params">
+        <div class="params-quantity">
+          Количество: {{ this.quantity }}
+        </div>
+        <div class="params-price">
+          Цена: {{ this.price }}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  <div class="items-page__total">
+    Всего: {{ total }}
+  </div>
+</div>
